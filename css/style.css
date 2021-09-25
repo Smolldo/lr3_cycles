@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+}
+.cover{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list_cover{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.itemS+.itemS{
+    margin-left: 30px;
+}
+
+.canvas{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
