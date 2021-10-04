@@ -5,7 +5,7 @@ const calculate = () =>{
         let y  = Math.pow(Math.pow(Math.sin(x),2 *x) + 0.5, 0.5);
          let list = document.querySelector('.step_list');
         let item = document.createElement("li");
-        item.textContent = y;
+        item.textContent = y.toFixed(2);
         list.appendChild(item);
     } 
 
@@ -15,10 +15,10 @@ const calculate = () =>{
         let y  = Math.pow(Math.pow(Math.sin(x),2 *x) + 0.5, 0.5);
         let list2 = document.querySelector('.doWhile');
         let item2 = document.createElement("li");
-        item2.textContent = y;
+        item2.textContent = y.toFixed(2);
         list2.appendChild(item2)
     }
-        while( x > 0 && x < 0.2)
+        while( x >= 0 && x < 0.2)
 
     var x = 0;
     while ( x < 0.2) {
@@ -26,7 +26,7 @@ const calculate = () =>{
         let y  = Math.pow(Math.pow(Math.sin(x),2 *x) + 0.5, 0.5);
         let list3 = document.querySelector('.whileC');
         let item3 = document.createElement("li");
-        item3.textContent = y;
+        item3.textContent = y.toFixed(2);
         list3.appendChild(item3);
     }
 }
@@ -43,5 +43,3 @@ for (let i = 0; i <= 0.2; i += 0.025) {
   ctx[i?'lineTo':'moveTo'](i*z, y(i)*z);
 }
 ctx.stroke();
-
-
